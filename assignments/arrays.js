@@ -86,7 +86,7 @@ console.log(inventory[49].car_make, inventory[49].car_model);
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
 let carModelsSorted = [];
-for(let i = 0; i < Object.keys(inventory).length; i++){
+for(let i = 0; i < inventory.length; i++){
   carModels[i] = inventory[i].car_model;
 }
 carModelsSorted = carModels.sort();
@@ -95,7 +95,7 @@ console.log(carModelsSorted);
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
-for(let i = 0; i < Object.keys(inventory).length; i++){
+for(let i = 0; i < inventory.length; i++){
   carYears[i] = inventory[i].car_year;
 }
 console.log(carYears);
